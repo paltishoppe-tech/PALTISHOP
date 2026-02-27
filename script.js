@@ -53,7 +53,7 @@ const products = [
   // Peluches (ya tenías)
   { id:"snoopy-tulipan", name:"Snoopy con tulipán (20 cm)", category:"Peluches", price:39.90, img:"Captura de pantalla 2026-02-27 174147.png",
     desc:"Tulipán: lila, amarillo y rojo.", badges:["20 cm"], hot:true, size:"20 cm", variants:"Lila, Amarillo, Rojo" },
-  { id:"hello-kitty", name:"Hello Kitty (22 cm)", category:"Peluches", price:39.90, img:"page-11.webp",
+  { id:"hello-kitty", name:"Hello Kitty (22 cm)", category:"Peluches", price:39.90, img:"Captura de pantalla 2026-02-27 174105.png",
     desc:"Tulipán lila y amarillo.", badges:["22 cm"], hot:true, size:"22 cm", variants:"Lila, Amarillo" },
 
   // ✅ Peluches (FALTANTES del catálogo)
