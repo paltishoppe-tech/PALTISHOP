@@ -28,17 +28,17 @@
     // Packs
     { id:"pack-1", name:"Pack 1 (Corderito)", category:"Packs", price:119.90, img:"page-03.webp",
       desc:"Corderito + collar tulipán + lámpara tulipán + llavero + 3 fotos polaroid + dedicatoria.", badges:["⭐ Pack"], hot:true },
-    { id:"pack-2", name:"Pack 2 (Corderito)", category:"Packs", price:109.90, img:"page-04.webp",
+    { id:"pack-2", name:"Pack 2 (Corderito)", category:"Packs", price:109.90, img:"image (1).png",
       desc:"Corderito + lámpara tulipán + collar tulipán + dedicatoria.", badges:["⭐ Pack"], hot:true },
-    { id:"pack-3", name:"Pack 3", category:"Packs", price:109.90, img:"page-04.webp",
+    { id:"pack-3", name:"Pack 3", category:"Packs", price:109.90, img:"image (2).png",
       desc:"Peluche que respira (modelo a elegir) + collar girasol + anillo girasol + dedicatoria.", badges:["⭐ Pack"], hot:false },
-    { id:"pack-4", name:"Pack 4", category:"Packs", price:99.90, img:"page-05.webp",
+    { id:"pack-4", name:"Pack 4", category:"Packs", price:99.90, img:"image (3).png",
       desc:"Corderito + collar tulipán + 3 polaroids + llavero + dedicatoria.", badges:["⭐ Pack"], hot:false },
-    { id:"pack-5", name:"Pack 5", category:"Packs", price:99.90, img:"page-05.webp",
+    { id:"pack-5", name:"Pack 5", category:"Packs", price:99.90, img:"image (4).png",
       desc:"Peluche que respira (modelo a elegir) + lámpara tulipán + dedicatoria.", badges:["⭐ Pack"], hot:true },
-    { id:"pack-6", name:"Pack 6", category:"Packs", price:75.90, img:"page-06.webp",
+    { id:"pack-6", name:"Pack 6", category:"Packs", price:75.90, img:"image (5).png",
       desc:"Peluche que respira (modelo a elegir) + 3 polaroids + llavero + dedicatoria.", badges:["⭐ Pack"], hot:false },
-    { id:"pack-7", name:"Pack 7", category:"Packs", price:119.90, img:"page-06.webp",
+    { id:"pack-7", name:"Pack 7", category:"Packs", price:119.90, img:"image (6).png",
       desc:"Peluche que respira + collar girasol + lámpara tulipán + llavero + 3 polaroids + dedicatoria.", badges:["⭐ Pack","🔥 HOT"], hot:true },
 
     // Lámparas / Espejos
