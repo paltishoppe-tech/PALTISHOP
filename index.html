@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>PALTISHOP — Catálogo 🌸</title>
+  <meta name="description" content="Packs, peluches, lámparas y accesorios. Regalos que enamoran."/>
+  <link rel="icon" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body id="top">
+
+  <div class="banner-8m">✦ Feliz Día de la Mujer · 8 de Marzo · Regalos que enamoran · PALTISHOP ✦</div>
+
+  <header class="header">
+    <div class="container header__row">
+      <div class="brand">
+        <div class="brand__logo">P</div>
+        <div>
+          <div class="brand__name">PALTISHOP</div>
+          <div class="brand__tag">Regalos con amor · Lima, Perú</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#packs">Packs</a>
+        <a href="#productos">Productos</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#contacto" class="btn btn--sm">Pedir ahora</a>
+      </nav>
+      <button class="hamburger" aria-label="Menú" data-hamburger>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="pill">✦ Especial Día de la Mujer · 8M 2025</p>
+          <h1>Regalos que<br/>ella va a amar</h1>
+          <p class="lead">Packs listos para entregar, peluches únicos, lámparas, collares y accesorios. Pide directo por WhatsApp — rápido y fácil.</p>
+          <div class="hero__cta">
+            <a class="btn" href="#packs">Ver packs</a>
+            <a class="btn btn--ghost" href="#catalogo">Ver catálogo completo</a>
+          </div>
+          <p class="meta">RUC 20613776169 · PALTISHOP S.A.C · 📲 +51 912 640 288</p>
+        </div>
+        <div class="hero__preview">
+          <div class="previewCard" data-open-page="1">
+            <img src="page-01.webp" alt="Catálogo PALTISHOP" loading="eager"/>
+            <div class="previewCard__badge">Abrir catálogo →</div>
+          </div>
+          <div class="previewStack">
+            <button class="mini" data-open-page="2">
+              <img src="page-02.webp" alt="Testimonios" loading="lazy"/>
+              <span>Testimonios</span>
+            </button>
+            <button class="mini" data-open-page="8">
+              <img src="page-08.webp" alt="Peluches" loading="lazy"/>
+              <span>Peluches</span>
+            </button>
+            <button class="mini" data-open-page="20">
+              <img src="page-20.webp" alt="Pareja" loading="lazy"/>
+              <span>Pareja</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="packs">
+      <div class="container">
+        <div class="section__head">
+          <div class="eyebrow">✦ Especial 8M</div>
+          <h2>Packs Destacados</h2>
+          <div class="divider"></div>
+          <p class="section__sub">Combos listos para regalar — cada uno con su botón directo a WhatsApp.</p>
+        </div>
+        <div class="grid" id="packsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="productos">
+      <div class="container">
+        <div class="section__head">
+          <div class="eyebrow">✦ Colección completa</div>
+          <h2>Productos</h2>
+          <div class="divider"></div>
+          <p class="section__sub">Filtra por categoría y pide lo que quieras directo por WhatsApp.</p>
+          <div class="filters">
+            <button class="chip is-active" data-filter="all">Todo</button>
+            <button class="chip" data-filter="peluches">Peluches</button>
+            <button class="chip" data-filter="lamparas">Lámparas</button>
+            <button class="chip" data-filter="accesorios">Accesorios</button>
+            <button class="chip" data-filter="pareja">Para pareja</button>
+          </div>
+        </div>
+        <div class="grid" id="productsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="catalogo">
+      <div class="container">
+        <div class="section__head">
+          <div class="eyebrow">✦ 22 páginas</div>
+          <h2>Catálogo Completo</h2>
+          <div class="divider"></div>
+          <p class="section__sub">Clic en cualquier página para verla en grande y pedir.</p>
+        </div>
+        <div class="catalogGrid" id="catalogGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section--cta" id="contacto">
+      <div class="container cta">
+        <div>
+          <div class="eyebrow">✦ Atención inmediata</div>
+          <h2>¿Lista para pedir?</h2>
+          <div class="divider"></div>
+          <p class="section__sub" style="max-width:420px">Escríbenos y te respondemos al instante. Envíos disponibles.</p>
+          <p style="color:var(--muted);font-size:.8rem;margin-top:10px;letter-spacing:.3px">📲 +51 912 640 288 · PALTISHOP S.A.C</p>
+        </div>
+        <div class="cta__actions">
+          <a class="btn btn--wa" id="whatsBtn" href="#" target="_blank" rel="noopener">💬 Escribir por WhatsApp</a>
+          <a class="btn btn--ghost" href="#packs">Ver packs</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__row">
+        <p>© <span id="year"></span> PALTISHOP S.A.C · RUC 20613776169 · Hecho con amor 💜</p>
+        <a href="#top" class="toTop">↑ Volver arriba</a>
+      </div>
+    </footer>
+
+  </main>
+
+  <div class="viewer" aria-hidden="true" id="viewer">
+    <div class="viewer__backdrop" data-close></div>
+    <div class="viewer__panel" role="dialog" aria-modal="true">
+      <div class="viewer__top">
+        <div class="viewer__title" id="viewerTitle">Página</div>
+        <div class="viewer__tools">
+          <button class="iconBtn" data-prev>← Anterior</button>
+          <button class="iconBtn" data-next>Siguiente →</button>
+          <a class="iconBtn iconBtn--wa" id="viewerWa" href="#" target="_blank" rel="noopener">💬 Pedir</a>
+          <a class="iconBtn" id="openImg" href="#" target="_blank" rel="noopener">⤢</a>
+          <button class="iconBtn iconBtn--danger" data-close>✕</button>
+        </div>
+      </div>
+      <div class="viewer__body">
+        <img id="viewerImg" alt="Página del catálogo"/>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
