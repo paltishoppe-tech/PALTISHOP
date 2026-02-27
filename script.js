@@ -28,8 +28,6 @@
     // Packs
     { id:"pack-1", name:"Pack 1 (Corderito)", category:"Packs", price:119.90, img:"page-03.webp",
       desc:"Corderito + collar tulipán + lámpara tulipán + llavero + 3 fotos polaroid + dedicatoria.", badges:["⭐ Pack"], hot:true },
-    { id:"pack-nochebuena", name:"Pack Nochebuena Contigo", category:"Packs", price:119.90, img:"page-03.webp",
-      desc:"Peluche que respira + espejo tulipanes infinitos + collar + 3 polaroids + llavero personalizado + chocolates.", badges:["🔥 HOT"], hot:true },
     { id:"pack-2", name:"Pack 2 (Corderito)", category:"Packs", price:109.90, img:"page-04.webp",
       desc:"Corderito + lámpara tulipán + collar tulipán + dedicatoria.", badges:["⭐ Pack"], hot:true },
     { id:"pack-3", name:"Pack 3", category:"Packs", price:109.90, img:"page-04.webp",
