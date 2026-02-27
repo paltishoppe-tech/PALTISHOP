@@ -46,81 +46,81 @@ const products = [
     desc:"Colores: Multicolor, Celeste, Lila, Rosado.", badges:["🌷 Aesthetic"], hot:true, size:"—", variants:"Multicolor, Celeste, Lila, Rosado" },
 
   // Peluches que respiran (por separado)
-  { id:"peluche-respira", name:"Peluchito que respira (30 cm)", category:"Peluches", price:39.90, img:"page-08.webp",
+  { id:"peluche-respira", name:"Peluchito que respira (30 cm)", category:"Peluches", price:39.90, img:"c247fcba-aaae-4ec0-9163-8db3413f74b8.jpg",
     desc:"Modelos: Elefante, Hello Kitty, Nutria.", badges:["Tendencia","30 cm"], hot:true, size:"30 cm",
     variants:"Nutria (marrón/morado/rosado/plomo/azul/amarillo/celeste/beige), Hello Kitty, Elefante" },
 
   // Peluches (ya tenías)
-  { id:"snoopy-tulipan", name:"Snoopy con tulipán (20 cm)", category:"Peluches", price:39.90, img:"page-10.webp",
+  { id:"snoopy-tulipan", name:"Snoopy con tulipán (20 cm)", category:"Peluches", price:39.90, img:"Captura de pantalla 2026-02-27 174147.png",
     desc:"Tulipán: lila, amarillo y rojo.", badges:["20 cm"], hot:true, size:"20 cm", variants:"Lila, Amarillo, Rojo" },
   { id:"hello-kitty", name:"Hello Kitty (22 cm)", category:"Peluches", price:39.90, img:"page-11.webp",
     desc:"Tulipán lila y amarillo.", badges:["22 cm"], hot:true, size:"22 cm", variants:"Lila, Amarillo" },
 
   // ✅ Peluches (FALTANTES del catálogo)
-  { id:"oso-rosa", name:"Oso con rosa (20 cm)", category:"Peluches", price:39.90, img:"page-09.webp",
+  { id:"oso-rosa", name:"Oso con rosa (20 cm)", category:"Peluches", price:39.90, img:"Captura de pantalla 2026-02-27 174326.png",
     desc:"Oso con rosa (detalle ideal para regalo).", badges:["20 cm"], hot:true, size:"20 cm" },
 
-  { id:"conejo-zanahoria", name:"Conejo zanahoria (24 cm)", category:"Peluches", price:39.90, img:"page-09.webp",
+  { id:"conejo-zanahoria", name:"Conejo zanahoria (24 cm)", category:"Peluches", price:39.90, img:"Captura de pantalla 2026-02-27 174314.png",
     desc:"Conejito con zanahoria.", badges:["24 cm"], hot:true, size:"24 cm" },
 
-  { id:"oso-corbata", name:"Oso con corbata (20 cm)", category:"Peluches", price:39.90, img:"page-09.webp",
+  { id:"oso-corbata", name:"Oso con corbata (20 cm)", category:"Peluches", price:39.90, img:"Captura de pantalla 2026-02-27 174259.png",
     desc:"Oso con corbata (clásico y elegante).", badges:["20 cm"], hot:false, size:"20 cm" },
 
-  { id:"cinnamoroll", name:"Cinnamoroll (28 cm)", category:"Peluches", price:39.90, img:"page-09.webp",
+  { id:"cinnamoroll", name:"Cinnamoroll (28 cm)", category:"Peluches", price:39.90, img:"Captura de pantalla 2026-02-27 174243.png",
     desc:"Cinnamoroll (suave y grande).", badges:["28 cm"], hot:true, size:"28 cm" },
 
-  { id:"corderito-gorra", name:"Corderito con gorra (22 cm)", category:"Peluches", price:39.90, img:"page-10.webp",
+  { id:"corderito-gorra", name:"Corderito con gorra (22 cm)", category:"Peluches", price:39.90, img:"Captura de pantalla 2026-02-27 174226.png",
     desc:"Corderito con gorrita.", badges:["22 cm"], hot:true, size:"22 cm" },
 
-  { id:"pinguino-i-love-you", name:"Pingüino I ❤️ You (20 cm)", category:"Peluches", price:39.90, img:"page-10.webp",
+  { id:"pinguino-i-love-you", name:"Pingüino I ❤️ You (20 cm)", category:"Peluches", price:39.90, img:"Captura de pantalla 2026-02-27 174125.png",
     desc:"Disponible en azul.", badges:["20 cm"], hot:true, size:"20 cm", variants:"Azul" },
 
-  { id:"mono", name:"Mono ⭐ (21 cm)", category:"Peluches", price:39.90, img:"page-10.webp",
+  { id:"mono", name:"Mono ⭐ (21 cm)", category:"Peluches", price:39.90, img:"Captura de pantalla 2026-02-27 174116.png",
     desc:"Parejita de monitos.", badges:["21 cm"], hot:true, size:"21 cm" },
 
-  { id:"gatito-chino", name:"Gatito chino (22 cm)", category:"Peluches", price:39.90, img:"page-11.webp",
+  { id:"gatito-chino", name:"Gatito chino (22 cm)", category:"Peluches", price:39.90, img:"Captura de pantalla 2026-02-27 174055.png",
     desc:"Gatito estilo chino.", badges:["22 cm"], hot:true, size:"22 cm" },
 
-  { id:"hello-kitty-girasol", name:"Hello Kitty girasol (20 cm)", category:"Peluches", price:39.90, img:"page-11.webp",
+  { id:"hello-kitty-girasol", name:"Hello Kitty girasol (20 cm)", category:"Peluches", price:39.90, img:"Captura de pantalla 2026-02-27 174038.png",
     desc:"Hello Kitty con girasol.", badges:["20 cm"], hot:true, size:"20 cm" },
 
-  { id:"snoopy-pijama", name:"Snoopy pijama (21 cm)", category:"Peluches", price:39.90, img:"page-11.webp",
+  { id:"snoopy-pijama", name:"Snoopy pijama (21 cm)", category:"Peluches", price:39.90, img:"Captura de pantalla 2026-02-27 174010.png",
     desc:"Snoopy con pijamita.", badges:["21 cm"], hot:true, size:"21 cm" },
 
-  { id:"cerdito-medalla", name:"Cerdito medalla (20 cm)", category:"Peluches", price:39.90, img:"page-12.webp",
+  { id:"cerdito-medalla", name:"Cerdito medalla (20 cm)", category:"Peluches", price:39.90, img:"Captura de pantalla 2026-02-27 173822.png",
     desc:"Cerdito con medallita.", badges:["20 cm"], hot:true, size:"20 cm" },
 
-  { id:"cerdito-mochila", name:"Cerdito mochila (20 cm)", category:"Peluches", price:39.90, img:"page-12.webp",
+  { id:"cerdito-mochila", name:"Cerdito mochila (20 cm)", category:"Peluches", price:39.90, img:"Captura de pantalla 2026-02-27 173913.png",
     desc:"Cerdito con mochilita.", badges:["20 cm"], hot:true, size:"20 cm" },
 
-  { id:"cerdito-unicornio", name:"Cerdito unicornio (23 cm)", category:"Peluches", price:39.90, img:"page-12.webp",
+  { id:"cerdito-unicornio", name:"Cerdito unicornio (23 cm)", category:"Peluches", price:39.90, img:"Captura de pantalla 2026-02-27 173804.png",
     desc:"Disponible en blanco y celeste.", badges:["23 cm"], hot:true, size:"23 cm", variants:"Blanco, Celeste" },
 
-  { id:"cerdito-dino", name:"Cerdito dino (20 cm)", category:"Peluches", price:39.90, img:"page-12.webp",
+  { id:"cerdito-dino", name:"Cerdito dino (20 cm)", category:"Peluches", price:39.90, img:"Captura de pantalla 2026-02-27 173813.png",
     desc:"Cerdito disfraz dino.", badges:["20 cm"], hot:true, size:"20 cm" },
 
-  { id:"erizo-lazo", name:"Erizo con lazo (20 cm)", category:"Peluches", price:39.90, img:"page-13.webp",
+  { id:"erizo-lazo", name:"Erizo con lazo (20 cm)", category:"Peluches", price:39.90, img:"Captura de pantalla 2026-02-27 173753.png",
     desc:"Erizo con lazo.", badges:["20 cm"], hot:true, size:"20 cm" },
 
-  { id:"pancito", name:"Pancito (20 cm)", category:"Peluches", price:39.90, img:"page-13.webp",
+  { id:"pancito", name:"Pancito (20 cm)", category:"Peluches", price:39.90, img:"Captura de pantalla 2026-02-27 173740.png",
     desc:"Pancito (modelo tierno).", badges:["20 cm"], hot:false, size:"20 cm" },
 
-  { id:"gatita", name:"Gatita (20 cm)", category:"Peluches", price:39.90, img:"page-13.webp",
+  { id:"gatita", name:"Gatita (20 cm)", category:"Peluches", price:39.90, img:"Captura de pantalla 2026-02-27 173728.png",
     desc:"Gatita (modelo tierno).", badges:["20 cm"], hot:false, size:"20 cm" },
 
-  { id:"pochaco-zanahoria", name:"Pochaco zanahoria (30 cm)", category:"Peluches", price:39.90, img:"page-13.webp",
+  { id:"pochaco-zanahoria", name:"Pochaco zanahoria (30 cm)", category:"Peluches", price:39.90, img:"Captura de pantalla 2026-02-27 173656.png",
     desc:"Pochaco con zanahoria.", badges:["30 cm"], hot:true, size:"30 cm" },
 
-  { id:"pinguino-audifonos", name:"Pingüino con audífonos (25 cm)", category:"Peluches", price:39.90, img:"page-14.webp",
+  { id:"pinguino-audifonos", name:"Pingüino con audífonos (25 cm)", category:"Peluches", price:39.90, img:"Captura de pantalla 2026-02-27 173643.png",
     desc:"Nuevo ingreso: pingüino con audífonos.", badges:["25 cm","Nuevo"], hot:true, size:"25 cm" },
 
-  { id:"pinguino-dino", name:"Pingüino dino (22 cm)", category:"Peluches", price:39.90, img:"page-14.webp",
+  { id:"pinguino-dino", name:"Pingüino dino (22 cm)", category:"Peluches", price:39.90, img:"Captura de pantalla 2026-02-27 173632.png",
     desc:"Nuevo ingreso: pingüino dino.", badges:["22 cm","Nuevo"], hot:true, size:"22 cm" },
 
-  { id:"pinguino", name:"Pingüino (20 cm)", category:"Peluches", price:39.90, img:"page-14.webp",
+  { id:"pinguino", name:"Pingüino (20 cm)", category:"Peluches", price:39.90, img:"Captura de pantalla 2026-02-27 173619.png",
     desc:"Nuevo ingreso: pingüino.", badges:["20 cm","Nuevo"], hot:true, size:"20 cm" },
 
-  { id:"ositos-carinocitos", name:"Ositos cariñositos", category:"Peluches", price:39.90, img:"page-14.webp",
+  { id:"ositos-carinocitos", name:"Ositos cariñositos", category:"Peluches", price:39.90, img:"Captura de pantalla 2026-02-27 173605.png",
     desc:"Modelos surtidos (consultar stock).", badges:["Nuevo"], hot:true, size:"—" },
 
   // Esferas
