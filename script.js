@@ -8,7 +8,7 @@
   const WHATSAPP_PHONE = '51928314541'; // cambia tu número aquí
 
   const $ = (s, el=document) => el.querySelector(s);
-  const $$ = (s, el=document) => Array.from(el.querySelectorAll(s));
+  const $$ = (s, el=document) => Array.from(el.querySelectorAll(s)); 
 
   const fmt = (n) => `S/ ${Number(n||0).toFixed(2)}`;
   const esc = (str) => String(str ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
