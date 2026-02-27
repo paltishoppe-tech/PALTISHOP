@@ -24,90 +24,164 @@
   });
 
   // ===== Data =====
-  const products = [
-    // Packs
-    { id:"pack-1", name:"Pack 1 (Corderito)", category:"Packs", price:119.90, img:"page-03.webp",
-      desc:"Corderito + collar tulipán + lámpara tulipán + llavero + 3 fotos polaroid + dedicatoria.", badges:["⭐ Pack"], hot:true },
-    { id:"pack-2", name:"Pack 2 (Corderito)", category:"Packs", price:109.90, img:"image (1).png",
-      desc:"Corderito + lámpara tulipán + collar tulipán + dedicatoria.", badges:["⭐ Pack"], hot:true },
-    { id:"pack-3", name:"Pack 3", category:"Packs", price:109.90, img:"image (2).png",
-      desc:"Peluche que respira (modelo a elegir) + collar girasol + anillo girasol + dedicatoria.", badges:["⭐ Pack"], hot:false },
-    { id:"pack-4", name:"Pack 4", category:"Packs", price:99.90, img:"image (3).png",
-      desc:"Corderito + collar tulipán + 3 polaroids + llavero + dedicatoria.", badges:["⭐ Pack"], hot:false },
-    { id:"pack-5", name:"Pack 5", category:"Packs", price:99.90, img:"image (4).png",
-      desc:"Peluche que respira (modelo a elegir) + lámpara tulipán + dedicatoria.", badges:["⭐ Pack"], hot:true },
-    { id:"pack-6", name:"Pack 6", category:"Packs", price:75.90, img:"image (5).png",
-      desc:"Peluche que respira (modelo a elegir) + 3 polaroids + llavero + dedicatoria.", badges:["⭐ Pack"], hot:false },
-    { id:"pack-7", name:"Pack 7", category:"Packs", price:119.90, img:"image (6).png",
-      desc:"Peluche que respira + collar girasol + lámpara tulipán + llavero + 3 polaroids + dedicatoria.", badges:["⭐ Pack","🔥 HOT"], hot:true },
+const products = [
+  // Packs
+  { id:"pack-1", name:"Pack 1 (Corderito)", category:"Packs", price:119.90, img:"page-03.webp",
+    desc:"Corderito + collar tulipán + lámpara tulipán + llavero + 3 fotos polaroid + dedicatoria.", badges:["⭐ Pack"], hot:true },
+  { id:"pack-2", name:"Pack 2 (Corderito)", category:"Packs", price:109.90, img:"image (1).png",
+    desc:"Corderito + lámpara tulipán + collar tulipán + dedicatoria.", badges:["⭐ Pack"], hot:true },
+  { id:"pack-3", name:"Pack 3", category:"Packs", price:109.90, img:"image (2).png",
+    desc:"Peluche que respira (modelo a elegir) + collar girasol + anillo girasol + dedicatoria.", badges:["⭐ Pack"], hot:false },
+  { id:"pack-4", name:"Pack 4", category:"Packs", price:99.90, img:"image (3).png",
+    desc:"Corderito + collar tulipán + 3 polaroids + llavero + dedicatoria.", badges:["⭐ Pack"], hot:false },
+  { id:"pack-5", name:"Pack 5", category:"Packs", price:99.90, img:"image (4).png",
+    desc:"Peluche que respira (modelo a elegir) + lámpara tulipán + dedicatoria.", badges:["⭐ Pack"], hot:true },
+  { id:"pack-6", name:"Pack 6", category:"Packs", price:75.90, img:"image (5).png",
+    desc:"Peluche que respira (modelo a elegir) + 3 polaroids + llavero + dedicatoria.", badges:["⭐ Pack"], hot:false },
+  { id:"pack-7", name:"Pack 7", category:"Packs", price:119.90, img:"image (6).png",
+    desc:"Peluche que respira + collar girasol + lámpara tulipán + llavero + 3 polaroids + dedicatoria.", badges:["⭐ Pack","🔥 HOT"], hot:true },
 
-    // Lámparas / Espejos
-    { id:"lampara-tulipan", name:"Lámpara de tulipán", category:"Lámparas", price:39.90, img:"page-07.webp",
-      desc:"Colores: Multicolor, Celeste, Lila, Rosado.", badges:["🌷 Aesthetic"], hot:true, size:"—", variants:"Multicolor, Celeste, Lila, Rosado" },
+  // Lámparas / Espejos
+  { id:"lampara-tulipan", name:"Lámpara de tulipán", category:"Lámparas", price:39.90, img:"image (7).png",
+    desc:"Colores: Multicolor, Celeste, Lila, Rosado.", badges:["🌷 Aesthetic"], hot:true, size:"—", variants:"Multicolor, Celeste, Lila, Rosado" },
 
-    // Peluches que respiran (por separado)
-    { id:"peluche-respira", name:"Peluchito que respira (30 cm)", category:"Peluches", price:39.90, img:"page-08.webp",
-      desc:"Modelos: Elefante, Hello Kitty, Nutria.", badges:["Tendencia","30 cm"], hot:true, size:"30 cm",
-      variants:"Nutria (marrón/morado/rosado/plomo/azul/amarillo/celeste/beige), Hello Kitty, Elefante" },
+  // Peluches que respiran (por separado)
+  { id:"peluche-respira", name:"Peluchito que respira (30 cm)", category:"Peluches", price:39.90, img:"page-08.webp",
+    desc:"Modelos: Elefante, Hello Kitty, Nutria.", badges:["Tendencia","30 cm"], hot:true, size:"30 cm",
+    variants:"Nutria (marrón/morado/rosado/plomo/azul/amarillo/celeste/beige), Hello Kitty, Elefante" },
 
-    // Peluches (ejemplos)
-    { id:"snoopy-tulipan", name:"Snoopy con tulipán (20 cm)", category:"Peluches", price:39.90, img:"page-10.webp",
-      desc:"Tulipán: lila, amarillo y rojo.", badges:["20 cm"], hot:true, size:"20 cm", variants:"Lila, Amarillo, Rojo" },
-    { id:"hello-kitty", name:"Hello Kitty (22 cm)", category:"Peluches", price:39.90, img:"page-11.webp",
-      desc:"Tulipán lila y amarillo.", badges:["22 cm"], hot:true, size:"22 cm", variants:"Lila, Amarillo" },
+  // Peluches (ya tenías)
+  { id:"snoopy-tulipan", name:"Snoopy con tulipán (20 cm)", category:"Peluches", price:39.90, img:"page-10.webp",
+    desc:"Tulipán: lila, amarillo y rojo.", badges:["20 cm"], hot:true, size:"20 cm", variants:"Lila, Amarillo, Rojo" },
+  { id:"hello-kitty", name:"Hello Kitty (22 cm)", category:"Peluches", price:39.90, img:"page-11.webp",
+    desc:"Tulipán lila y amarillo.", badges:["22 cm"], hot:true, size:"22 cm", variants:"Lila, Amarillo" },
 
-    // Esferas
-    { id:"esfera-1", name:"Esfera 1", category:"Esferas", price:39.90, img:"page-15.webp", desc:"Esfera decorativa (modelo 1).", badges:["🔮"], hot:false },
-    { id:"esfera-2", name:"Esfera 2", category:"Esferas", price:39.90, img:"page-15.webp", desc:"Esfera decorativa (modelo 2).", badges:["🔮"], hot:false },
-    { id:"esfera-3", name:"Esfera 3", category:"Esferas", price:39.90, img:"page-15.webp", desc:"Esfera decorativa (modelo 3).", badges:["🔮"], hot:true },
-    { id:"esfera-4", name:"Esfera 4", category:"Esferas", price:39.90, img:"page-15.webp", desc:"Esfera decorativa (modelo 4).", badges:["🔮"], hot:false },
+  // ✅ Peluches (FALTANTES del catálogo)
+  { id:"oso-rosa", name:"Oso con rosa (20 cm)", category:"Peluches", price:39.90, img:"page-09.webp",
+    desc:"Oso con rosa (detalle ideal para regalo).", badges:["20 cm"], hot:true, size:"20 cm" },
 
-    // Accesorios (ejemplos)
-    { id:"collar-tulipan", name:"Collar tulipán", category:"Accesorios", price:39.90, img:"page-18.webp",
-      desc:"Colores: rojo, rosado, lila, amarillo, blanco.", badges:["💐"], hot:true, variants:"Rojo, Rosado, Lila, Amarillo, Blanco" },
-    { id:"collar-mariposa", name:"Collar mariposa", category:"Accesorios", price:39.90, img:"page-17.webp",
-      desc:"Colores: lila, blanca, rosada, roja, azul.", badges:["🦋"], hot:true, variants:"Lila, Blanca, Rosada, Roja, Azul" },
+  { id:"conejo-zanahoria", name:"Conejo zanahoria (24 cm)", category:"Peluches", price:39.90, img:"page-09.webp",
+    desc:"Conejito con zanahoria.", badges:["24 cm"], hot:true, size:"24 cm" },
 
-    // Pareja
-    { id:"set-solmun", name:"Set Solmún", category:"Para pareja", price:89.90, img:"page-20.webp",
-      desc:"Par de anillos + par de collares + dedicatoria + chocolates.", badges:["💑"], hot:true },
-  ];
+  { id:"oso-corbata", name:"Oso con corbata (20 cm)", category:"Peluches", price:39.90, img:"page-09.webp",
+    desc:"Oso con corbata (clásico y elegante).", badges:["20 cm"], hot:false, size:"20 cm" },
 
-  // Each pack is different
-  const packConfigs = {
-    "pack-1": { title:"Pack 1 (Corderito)", fields:["note","card","collar","extras14"],
-      options:{ card:["N°1","N°2","N°3","N°4","N°5","N°6"], collar:["Tulipán","Mariposa","Girasol","Otro (escribir)"] } },
-    "pack-nochebuena": { title:"Pack Nochebuena Contigo", fields:["note","card","peluche","espejo","collar","extras14"],
-      options:{ card:["N°1","N°2","N°3","N°4","N°5","N°6"],
-        peluche:["Peluche que respira — Nutria","Peluche que respira — Hello Kitty","Peluche que respira — Conejo","Peluche que respira — Elefante","Otro (escribir)"],
-        espejo:["Tulipanes infinitos","Nube","Otro (escribir)"],
-        collar:["Tulipán","Mariposa","Girasol","Otro (escribir)"]
-      } },
-    "pack-2": { title:"Pack 2 (Corderito)", fields:["note","card","collar","extras14"],
-      options:{ card:["N°1","N°2","N°3","N°4","N°5","N°6"], collar:["Tulipán","Mariposa","Girasol","Otro (escribir)"] } },
-    "pack-3": { title:"Pack 3", fields:["note","card","peluche","collar"],
-      options:{ card:["N°1","N°2","N°3","N°4","N°5","N°6"],
-        peluche:["Peluche que respira — Nutria","Peluche que respira — Hello Kitty","Peluche que respira — Conejo","Peluche que respira — Elefante","Otro (escribir)"],
-        collar:["Girasol","Tulipán","Mariposa","Otro (escribir)"]
-      } },
-    "pack-4": { title:"Pack 4", fields:["note","card","collar","extras14"],
-      options:{ card:["N°1","N°2","N°3","N°4","N°5","N°6"], collar:["Tulipán","Mariposa","Girasol","Otro (escribir)"] } },
-    "pack-5": { title:"Pack 5", fields:["note","card","peluche","espejo"],
-      options:{ card:["N°1","N°2","N°3","N°4","N°5","N°6"],
-        peluche:["Peluche que respira — Nutria","Peluche que respira — Hello Kitty","Peluche que respira — Conejo","Peluche que respira — Elefante","Otro (escribir)"],
-        espejo:["Lámpara tulipán","Nube","Tulipanes infinitos","Otro (escribir)"]
-      } },
-    "pack-6": { title:"Pack 6", fields:["note","card","peluche","extras14"],
-      options:{ card:["N°1","N°2","N°3","N°4","N°5","N°6"],
-        peluche:["Peluche que respira — Nutria","Peluche que respira — Hello Kitty","Peluche que respira — Conejo","Peluche que respira — Elefante","Otro (escribir)"]
-      } },
-    "pack-7": { title:"Pack 7", fields:["note","card","peluche","collar","espejo","extras14"],
-      options:{ card:["N°1","N°2","N°3","N°4","N°5","N°6"],
-        peluche:["Peluche que respira — Nutria","Peluche que respira — Hello Kitty","Peluche que respira — Conejo","Peluche que respira — Elefante","Otro (escribir)"],
-        collar:["Girasol","Tulipán","Mariposa","Otro (escribir)"],
-        espejo:["Lámpara tulipán","Nube","Tulipanes infinitos","Otro (escribir)"]
-      } },
-  };
+  { id:"cinnamoroll", name:"Cinnamoroll (28 cm)", category:"Peluches", price:39.90, img:"page-09.webp",
+    desc:"Cinnamoroll (suave y grande).", badges:["28 cm"], hot:true, size:"28 cm" },
+
+  { id:"corderito-gorra", name:"Corderito con gorra (22 cm)", category:"Peluches", price:39.90, img:"page-10.webp",
+    desc:"Corderito con gorrita.", badges:["22 cm"], hot:true, size:"22 cm" },
+
+  { id:"pinguino-i-love-you", name:"Pingüino I ❤️ You (20 cm)", category:"Peluches", price:39.90, img:"page-10.webp",
+    desc:"Disponible en azul.", badges:["20 cm"], hot:true, size:"20 cm", variants:"Azul" },
+
+  { id:"mono", name:"Mono ⭐ (21 cm)", category:"Peluches", price:39.90, img:"page-10.webp",
+    desc:"Parejita de monitos.", badges:["21 cm"], hot:true, size:"21 cm" },
+
+  { id:"gatito-chino", name:"Gatito chino (22 cm)", category:"Peluches", price:39.90, img:"page-11.webp",
+    desc:"Gatito estilo chino.", badges:["22 cm"], hot:true, size:"22 cm" },
+
+  { id:"hello-kitty-girasol", name:"Hello Kitty girasol (20 cm)", category:"Peluches", price:39.90, img:"page-11.webp",
+    desc:"Hello Kitty con girasol.", badges:["20 cm"], hot:true, size:"20 cm" },
+
+  { id:"snoopy-pijama", name:"Snoopy pijama (21 cm)", category:"Peluches", price:39.90, img:"page-11.webp",
+    desc:"Snoopy con pijamita.", badges:["21 cm"], hot:true, size:"21 cm" },
+
+  { id:"cerdito-medalla", name:"Cerdito medalla (20 cm)", category:"Peluches", price:39.90, img:"page-12.webp",
+    desc:"Cerdito con medallita.", badges:["20 cm"], hot:true, size:"20 cm" },
+
+  { id:"cerdito-mochila", name:"Cerdito mochila (20 cm)", category:"Peluches", price:39.90, img:"page-12.webp",
+    desc:"Cerdito con mochilita.", badges:["20 cm"], hot:true, size:"20 cm" },
+
+  { id:"cerdito-unicornio", name:"Cerdito unicornio (23 cm)", category:"Peluches", price:39.90, img:"page-12.webp",
+    desc:"Disponible en blanco y celeste.", badges:["23 cm"], hot:true, size:"23 cm", variants:"Blanco, Celeste" },
+
+  { id:"cerdito-dino", name:"Cerdito dino (20 cm)", category:"Peluches", price:39.90, img:"page-12.webp",
+    desc:"Cerdito disfraz dino.", badges:["20 cm"], hot:true, size:"20 cm" },
+
+  { id:"erizo-lazo", name:"Erizo con lazo (20 cm)", category:"Peluches", price:39.90, img:"page-13.webp",
+    desc:"Erizo con lazo.", badges:["20 cm"], hot:true, size:"20 cm" },
+
+  { id:"pancito", name:"Pancito (20 cm)", category:"Peluches", price:39.90, img:"page-13.webp",
+    desc:"Pancito (modelo tierno).", badges:["20 cm"], hot:false, size:"20 cm" },
+
+  { id:"gatita", name:"Gatita (20 cm)", category:"Peluches", price:39.90, img:"page-13.webp",
+    desc:"Gatita (modelo tierno).", badges:["20 cm"], hot:false, size:"20 cm" },
+
+  { id:"pochaco-zanahoria", name:"Pochaco zanahoria (30 cm)", category:"Peluches", price:39.90, img:"page-13.webp",
+    desc:"Pochaco con zanahoria.", badges:["30 cm"], hot:true, size:"30 cm" },
+
+  { id:"pinguino-audifonos", name:"Pingüino con audífonos (25 cm)", category:"Peluches", price:39.90, img:"page-14.webp",
+    desc:"Nuevo ingreso: pingüino con audífonos.", badges:["25 cm","Nuevo"], hot:true, size:"25 cm" },
+
+  { id:"pinguino-dino", name:"Pingüino dino (22 cm)", category:"Peluches", price:39.90, img:"page-14.webp",
+    desc:"Nuevo ingreso: pingüino dino.", badges:["22 cm","Nuevo"], hot:true, size:"22 cm" },
+
+  { id:"pinguino", name:"Pingüino (20 cm)", category:"Peluches", price:39.90, img:"page-14.webp",
+    desc:"Nuevo ingreso: pingüino.", badges:["20 cm","Nuevo"], hot:true, size:"20 cm" },
+
+  { id:"ositos-carinocitos", name:"Ositos cariñositos", category:"Peluches", price:39.90, img:"page-14.webp",
+    desc:"Modelos surtidos (consultar stock).", badges:["Nuevo"], hot:true, size:"—" },
+
+  // Esferas
+  { id:"esfera-1", name:"Esfera 1", category:"Esferas", price:39.90, img:"page-15.webp", desc:"Esfera decorativa (modelo 1).", badges:["🔮"], hot:false },
+  { id:"esfera-2", name:"Esfera 2", category:"Esferas", price:39.90, img:"page-15.webp", desc:"Esfera decorativa (modelo 2).", badges:["🔮"], hot:false },
+  { id:"esfera-3", name:"Esfera 3", category:"Esferas", price:39.90, img:"page-15.webp", desc:"Esfera decorativa (modelo 3).", badges:["🔮"], hot:true },
+  { id:"esfera-4", name:"Esfera 4", category:"Esferas", price:39.90, img:"page-15.webp", desc:"Esfera decorativa (modelo 4).", badges:["🔮"], hot:false },
+
+  // Accesorios
+  { id:"collar-tulipan", name:"Collar tulipán", category:"Accesorios", price:39.90, img:"page-18.webp",
+    desc:"Colores: rojo, rosado, lila, amarillo, blanco.", badges:["💐"], hot:true, variants:"Rojo, Rosado, Lila, Amarillo, Blanco" },
+  { id:"collar-mariposa", name:"Collar mariposa", category:"Accesorios", price:39.90, img:"page-17.webp",
+    desc:"Colores: lila, blanca, rosada, roja, azul.", badges:["🦋"], hot:true, variants:"Lila, Blanca, Rosada, Roja, Azul" },
+
+  // Pareja
+  { id:"set-solmun", name:"Set Solmún", category:"Para pareja", price:89.90, img:"page-20.webp",
+    desc:"Par de anillos + par de collares + dedicatoria + chocolates.", badges:["💑"], hot:true },
+];
+
+// Each pack is different
+const packConfigs = {
+  "pack-1": { title:"Pack 1 (Corderito)", fields:["note","card","collar","extras14"],
+    options:{ card:["N°1","N°2","N°3","N°4","N°5","N°6"], collar:["Tulipán","Mariposa","Girasol","Otro (escribir)"] } },
+
+  "pack-nochebuena": { title:"Pack Nochebuena Contigo", fields:["note","card","peluche","espejo","collar","extras14"],
+    options:{ card:["N°1","N°2","N°3","N°4","N°5","N°6"],
+      peluche:["Peluche que respira — Nutria","Peluche que respira — Hello Kitty","Peluche que respira — Conejo","Peluche que respira — Elefante","Otro (escribir)"],
+      espejo:["Tulipanes infinitos","Nube","Otro (escribir)"],
+      collar:["Tulipán","Mariposa","Girasol","Otro (escribir)"]
+    } },
+
+  "pack-2": { title:"Pack 2 (Corderito)", fields:["note","card","collar","extras14"],
+    options:{ card:["N°1","N°2","N°3","N°4","N°5","N°6"], collar:["Tulipán","Mariposa","Girasol","Otro (escribir)"] } },
+
+  "pack-3": { title:"Pack 3", fields:["note","card","peluche","collar"],
+    options:{ card:["N°1","N°2","N°3","N°4","N°5","N°6"],
+      peluche:["Peluche que respira — Nutria","Peluche que respira — Hello Kitty","Peluche que respira — Conejo","Peluche que respira — Elefante","Otro (escribir)"],
+      collar:["Girasol","Tulipán","Mariposa","Otro (escribir)"]
+    } },
+
+  "pack-4": { title:"Pack 4", fields:["note","card","collar","extras14"],
+    options:{ card:["N°1","N°2","N°3","N°4","N°5","N°6"], collar:["Tulipán","Mariposa","Girasol","Otro (escribir)"] } },
+
+  "pack-5": { title:"Pack 5", fields:["note","card","peluche","espejo"],
+    options:{ card:["N°1","N°2","N°3","N°4","N°5","N°6"],
+      peluche:["Peluche que respira — Nutria","Peluche que respira — Hello Kitty","Peluche que respira — Conejo","Peluche que respira — Elefante","Otro (escribir)"],
+      espejo:["Lámpara tulipán","Nube","Tulipanes infinitos","Otro (escribir)"]
+    } },
+
+  "pack-6": { title:"Pack 6", fields:["note","card","peluche","extras14"],
+    options:{ card:["N°1","N°2","N°3","N°4","N°5","N°6"],
+      peluche:["Peluche que respira — Nutria","Peluche que respira — Hello Kitty","Peluche que respira — Conejo","Peluche que respira — Elefante","Otro (escribir)"]
+    } },
+
+  "pack-7": { title:"Pack 7", fields:["note","card","peluche","collar","espejo","extras14"],
+    options:{ card:["N°1","N°2","N°3","N°4","N°5","N°6"],
+      peluche:["Peluche que respira — Nutria","Peluche que respira — Hello Kitty","Peluche que respira — Conejo","Peluche que respira — Elefante","Otro (escribir)"],
+      collar:["Girasol","Tulipán","Mariposa","Otro (escribir)"],
+      espejo:["Lámpara tulipán","Nube","Tulipanes infinitos","Otro (escribir)"]
+    } },
+};
   const ADDON_PRICES = { extras14: 14.00 };
 
   // ===== State =====
