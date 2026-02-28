@@ -292,3 +292,75 @@ h1 span{background:linear-gradient(135deg, #fff, rgba(255,255,255,.55)); -webkit
   .pModal{grid-template-columns:1fr}
   .nav{display:none}
 }
+/* ===== MEJORAS v2 ===== */
+
+/* Precio tachado / oferta */
+.price--old { text-decoration: line-through; color: rgba(42,27,20,.45); font-weight:800; font-size:0.9em; margin-right:4px }
+.price--sale { color:#d94040; font-weight:900 }
+.badge-oferta { display:inline-block; padding:3px 8px; border-radius:999px; background:#d94040; color:#fff; font-size:11px; font-weight:900; margin-left:6px; vertical-align:middle }
+
+/* Badges sobre tarjeta */
+.card__img { position:relative }
+.card__badge-sale { position:absolute; top:10px; left:10px; background:#d94040; color:#fff; padding:4px 10px; border-radius:999px; font-size:11px; font-weight:900; z-index:2 }
+.card__badge-hot { position:absolute; top:10px; right:10px; background:rgba(255,255,255,.85); border-radius:999px; padding:4px 8px; font-size:13px; z-index:2 }
+
+/* Tags HOT */
+.tag--hot { background:rgba(217,64,64,.12); border-color:rgba(217,64,64,.25); color:#d94040 }
+
+/* Galería modal de producto */
+.pModal { display:grid; grid-template-columns:1fr 1fr; gap:18px }
+.pModal__gallery { display:flex; flex-direction:column; gap:10px }
+.pModal__imgWrap {
+  border:1px solid var(--line); border-radius:22px; overflow:hidden;
+  background:linear-gradient(135deg,rgba(224,160,64,.16),rgba(240,192,160,.10));
+  min-height:280px; display:flex; align-items:center; justify-content:center;
+}
+.pModal__imgWrap img { width:100%; height:280px; object-fit:cover; display:block }
+.pmThumbs { display:flex; gap:8px; flex-wrap:wrap }
+.pmThumb {
+  width:60px; height:60px; border-radius:12px; overflow:hidden;
+  border:2px solid transparent; cursor:pointer; transition:.15s ease;
+  background:linear-gradient(135deg,rgba(224,160,64,.16),rgba(240,192,160,.10));
+}
+.pmThumb img { width:100%; height:100%; object-fit:cover }
+.pmThumb:hover { border-color:rgba(224,160,64,.5); transform:scale(1.05) }
+.pmThumb--active { border-color:var(--p) !important }
+
+/* Variantes */
+.pModal__variantRow { margin:12px 0 }
+.pModal__variantLabel { margin-bottom:8px }
+.varGrid { display:flex; gap:8px; flex-wrap:wrap }
+.varBtn {
+  padding:8px 14px; border-radius:999px; border:1.5px solid var(--line);
+  background:rgba(255,255,255,.80); font-family:inherit; font-weight:800;
+  font-size:13px; cursor:pointer; transition:.15s ease;
+}
+.varBtn:hover { border-color:rgba(224,160,64,.5); background:#fff }
+.varBtn--active { background:rgba(224,160,64,.18); border-color:var(--p); color:var(--ink) }
+
+/* Modal datos del cliente */
+.cfSummaryBox {
+  background:rgba(224,160,64,.10); border:1px solid rgba(224,160,64,.25);
+  border-radius:14px; padding:12px 14px; margin:10px 0 16px;
+  font-weight:800; font-size:14px; line-height:1.5;
+}
+.cfForm { display:grid; gap:12px }
+.cfForm input {
+  width:100%; border:1px solid var(--line); border-radius:14px;
+  padding:10px 12px; font-family:inherit; font-weight:700;
+  background:rgba(255,255,255,.88); font-size:15px;
+}
+.cfForm input:focus { outline:2px solid rgba(224,160,64,.4); border-color:rgba(224,160,64,.5) }
+
+/* QtyRow mejorado */
+.qtyRow { display:flex; gap:10px; align-items:center; margin:12px 0; flex-wrap:wrap }
+
+/* Testimonios: con estrellas */
+.tCard__stars { font-size:14px; margin-bottom:6px }
+
+/* Responsive mejoras */
+@media (max-width:980px){
+  .pModal { grid-template-columns:1fr }
+  .pModal__imgWrap { min-height:220px }
+  .pModal__imgWrap img { height:220px }
+}
