@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#b08060" />
+  <link rel="icon" href="logo-paltishop.jpg">
+  <title>PALTISHOP — Especial Día de la Mujer 🌸</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="wrap topbar__inner">
+      <span>🌸 <b>Especial Día de la Mujer</b> · Regalos premium · Lima & Provincias</span>
+      <div class="topbar__links">
+        <a href="#envios">Envíos</a>
+        <a href="#faq">FAQ</a>
+        <a class="pill" id="ctaWhats">Pedir por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="wrap header__inner">
+      <a class="brand" href="#">
+        <div class="brand__logo brand__logo--img">
+          <img src="logo-paltishop.jpg" alt="PALTISHOP" />
+        </div>
+        <div class="brand__txt">
+          <div class="brand__name">PALTISHOP</div>
+          <div class="brand__sub">Regalos con amor · Perú</div>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="#tienda">Tienda</a>
+        <a href="#packs">Packs</a>
+        <a href="#destacados">Destacados</a>
+        <a href="#testimonios">Testimonios</a>
+        <button class="btn btn--cta" id="ctaNow">Pedir ahora</button>
+      </nav>
+
+      <div class="actions">
+        <button class="iconBtn" id="openSearch" aria-label="Buscar">🔎</button>
+        <button class="iconBtn" id="openCart" aria-label="Carrito">🛒 <span class="badgeCount" id="cartCount">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="wrap hero__inner">
+      <div class="hero__copy">
+        <div class="hero__chips">
+          <span class="chip">🌸 8M</span>
+          <span class="chip">🎁 Packs listos</span>
+          <span class="chip">🧸 Peluches</span>
+          <span class="chip">💡 Lámparas</span>
+        </div>
+        <h1>Regalos que emocionan<br><span>este Día de la Mujer 🌸</span></h1>
+        <p>
+          Packs listos, peluches tiernos, lámparas tulipán y detalles para sorprender.
+          Agrega al carrito o personaliza tu pack y finaliza por WhatsApp en 1 clic.
+        </p>
+        <div class="hero__cta">
+          <button class="btn" id="goPacks">Ver packs 💝</button>
+          <button class="btn btn--ghost" id="goShop">Ir a la tienda</button>
+        </div>
+        <div class="hero__note">✨ Tip: Personaliza el pack con dedicatoria, tarjetita y extras (polaroids + llavero).</div>
+      </div>
+
+      <div class="hero__card">
+        <div class="miniCard">
+          <div class="miniCard__title">🔥 Ofertas HOT</div>
+          <div class="miniCard__list" id="hotList"></div>
+          <button class="btn btn--ghost" id="goHot">Ver destacados</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sections -->
+  <section class="section" id="packs">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>💝 Packs (personalizables)</h2>
+        <p>Elige un pack y personalízalo antes de comprar: collar, peluche, tarjetita, dedicatoria y extras.</p>
+      </div>
+      <div class="chipsRow" id="packChips"></div>
+      <div class="grid" id="packGrid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="tienda">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>🛍️ Tienda</h2>
+        <p>Compra por unidad: peluches, lámparas, esferas y accesorios.</p>
+      </div>
+
+      <div class="shopbar">
+        <div class="chipsRow" id="catChips"></div>
+        <div class="shopbar__right">
+          <label class="select">
+            <span>Ordenar</span>
+            <select id="sortSel">
+              <option value="hot">Recomendado</option>
+              <option value="price_asc">Precio: menor</option>
+              <option value="price_desc">Precio: mayor</option>
+              <option value="az">A–Z</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="destacados">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>⭐ Destacados</h2>
+        <p>Los más pedidos para 8M.</p>
+      </div>
+      <div class="grid" id="hotGrid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="testimonios">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>💬 Testimonios</h2>
+        <p>Clientes felices = ventas felices 😌</p>
+      </div>
+      <div class="tGrid" id="tGrid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="envios">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>🚚 Envíos</h2>
+        <p>Coordina por WhatsApp y te confirmamos disponibilidad y entrega.</p>
+      </div>
+      <div class="infoGrid">
+        <div class="infoCard"><b>Lima</b><div>Delivery según zona.</div></div>
+        <div class="infoCard"><b>Provincia</b><div>Envíos a todo Perú (según courier).</div></div>
+        <div class="infoCard"><b>Fotos reales</b><div>Te mandamos foto del pedido antes de enviar.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>❓ Preguntas frecuentes</h2>
+        <p>Respuestas rápidas para cerrar ventas rápido.</p>
+      </div>
+      <div class="faq" id="faqBox"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div>© <b>PALTISHOP</b> · Especial 8M 🌸</div>
+      <button class="btn btn--ghost" id="toTop">Volver arriba ↑</button>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div class="modal" id="searchModal" aria-hidden="true">
+    <div class="modal__panel" role="dialog" aria-modal="true">
+      <div class="modal__head">
+        <div class="modal__title">Buscar</div>
+        <button class="iconBtn iconBtn--danger" data-close="searchModal">✕</button>
+      </div>
+      <div class="modal__body">
+        <div class="searchWrap">
+          <input id="searchInput" type="text" placeholder="Buscar: peluche, collar, lámpara..." autocomplete="off">
+          <button class="searchClear" id="clearSearch" type="button" aria-label="Limpiar">×</button>
+        </div>
+        <div class="hint">Tip: escribe 2–3 letras y verás resultados.</div>
+        <div class="searchResults" id="searchResults"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Modal -->
+  <div class="modal" id="cartModal" aria-hidden="true">
+    <div class="modal__panel" role="dialog" aria-modal="true">
+      <div class="modal__head">
+        <div class="modal__title">Carrito</div>
+        <button class="iconBtn iconBtn--danger" data-close="cartModal">✕</button>
+      </div>
+      <div class="modal__body">
+        <div class="cartList" id="cartList"></div>
+        <div class="cartTotal">
+          <div><b>Total</b><div class="muted" id="cartMeta">—</div></div>
+          <div class="total" id="cartTotal">S/ 0.00</div>
+        </div>
+        <div class="cartActions">
+          <button class="btn btn--ghost" id="clearCart">Vaciar</button>
+          <button class="btn" id="checkoutBtn">Finalizar por WhatsApp 💚</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Modal -->
+  <div class="modal" id="productModal" aria-hidden="true">
+    <div class="modal__panel modal__panel--wide" role="dialog" aria-modal="true">
+      <div class="modal__head">
+        <div class="modal__title" id="pmTitle">Producto</div>
+        <button class="iconBtn iconBtn--danger" data-close="productModal">✕</button>
+      </div>
+
+      <div class="modal__body">
+        <div class="pView">
+          <div class="pView__media">
+            <img id="pmImg" alt="Producto" />
+            <div class="thumbs" id="pmThumbs"></div>
+          </div>
+
+          <div class="pView__info">
+            <div class="badges" id="pmBadges"></div>
+
+            <div class="priceRow">
+              <div class="price" id="pmPrice">S/ 0.00</div>
+              <div class="compare" id="pmCompare" style="display:none">S/ 0.00</div>
+            </div>
+
+            <p class="pDesc" id="pmDesc">—</p>
+
+            <div class="pSplit">
+              <div class="pBlock" id="pmIncludes"></div>
+              <div class="pBlock" id="pmSpecs"></div>
+            </div>
+
+            <div class="formRow" id="pmVariantRow" style="display:none">
+              <label class="lbl">Variante</label>
+              <select id="pmVariant"></select>
+            </div>
+
+            <div class="qtyRow">
+              <button class="iconBtn" id="qtyMinus">−</button>
+              <div class="qtyVal" id="qtyVal">1</div>
+              <button class="iconBtn" id="qtyPlus">+</button>
+            </div>
+
+            <div class="pActions">
+              <button class="btn btn--ghost" id="pmAdd">Agregar</button>
+              <button class="btn" id="pmBuy">Comprar ahora 💚</button>
+            </div>
+
+            <div class="trustMini">
+              ✅ Pago contraentrega (según zona) · 🚚 Envíos a todo el Perú · 💬 Confirmación por WhatsApp
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout Modal (Datos del cliente) -->
+  <div class="modal" id="checkoutModal" aria-hidden="true">
+    <div class="modal__panel modal__panel--wide" role="dialog" aria-modal="true">
+      <div class="modal__head">
+        <div class="modal__title">Completa tus datos</div>
+        <button class="iconBtn iconBtn--danger" data-close="checkoutModal">✕</button>
+      </div>
+
+      <div class="modal__body">
+        <div class="checkout">
+          <div class="checkout__left">
+            <div class="checkout__summary">
+              <div class="sumTitle">🧾 Resumen</div>
+              <div id="coItems" class="sumItems"></div>
+              <div class="sumTotal">
+                <span>Total</span>
+                <b id="coTotal">S/ 0.00</b>
+              </div>
+              <div class="hint">Te abrimos WhatsApp con el pedido listo para enviar ✅</div>
+            </div>
+          </div>
+
+          <div class="checkout__right">
+            <form id="coForm" class="coForm" autocomplete="on">
+              <div class="row2">
+                <label class="field">
+                  <span>Nombre *</span>
+                  <input id="coName" required placeholder="Tu nombre" />
+                </label>
+                <label class="field">
+                  <span>Celular (WhatsApp) *</span>
+                  <input id="coPhone" required inputmode="numeric" placeholder="9 dígitos" />
+                </label>
+              </div>
+
+              <div class="row2">
+                <label class="field">
+                  <span>Ciudad / Distrito *</span>
+                  <input id="coCity" required placeholder="Ej: Lima, Puente Piedra" />
+                </label>
+                <label class="field">
+                  <span>Tipo de entrega *</span>
+                  <select id="coDelivery" required>
+                    <option value="">Selecciona…</option>
+                    <option>Delivery Lima/Callao</option>
+                    <option>Envío a Provincia</option>
+                    <option>Recojo (coordinar)</option>
+                  </select>
+                </label>
+              </div>
+
+              <label class="field">
+                <span>Dirección (si aplica)</span>
+                <input id="coAddress" placeholder="Av/Calle + número + referencia" />
+              </label>
+
+              <label class="field">
+                <span>Referencia / Indicaciones</span>
+                <textarea id="coRef" rows="3" placeholder="Ej: Portón negro, timbre 2, cerca al parque…"></textarea>
+              </label>
+
+              <div class="row2">
+                <label class="field">
+                  <span>Método de pago</span>
+                  <select id="coPay">
+                    <option>Contraentrega</option>
+                    <option>Yape / Plin</option>
+                    <option>Transferencia</option>
+                  </select>
+                </label>
+                <label class="field">
+                  <span>¿Para cuándo lo necesitas?</span>
+                  <input id="coWhen" placeholder="Hoy / mañana / fecha" />
+                </label>
+              </div>
+
+              <label class="field">
+                <span>Dedicatoria (opcional)</span>
+                <textarea id="coNote" rows="2" placeholder="Escribe tu dedicatoria aquí…"></textarea>
+              </label>
+
+              <div class="coActions">
+                <button class="btn btn--ghost" type="button" id="coBack">Volver</button>
+                <button class="btn" type="submit">Enviar pedido por WhatsApp 💚</button>
+              </div>
+
+              <div class="miniTrust">
+                🔒 Tus datos solo se usan para coordinar el envío.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pack Customizer Modal -->
+
+  <div class="modal" id="packModal" aria-hidden="true">
+    <div class="modal__panel modal__panel--wide" role="dialog" aria-modal="true">
+      <div class="modal__head">
+        <div class="modal__title" id="packTitle">Personalizar pack</div>
+        <button class="iconBtn iconBtn--danger" data-close="packModal">✕</button>
+      </div>
+      <div class="modal__body">
+        <div class="hint">Personaliza tu pack antes de comprar 💝</div>
+        <div id="packForm" class="packForm"></div>
+      </div>
+      <div class="modal__foot">
+        <button class="btn" id="pkBuy">Comprar por WhatsApp 💖</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
